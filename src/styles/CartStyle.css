@@ -1,0 +1,357 @@
+
+/* .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+.container1 {
+    width: 100%; /* Start with full width */
+    max-width: 1400px; /* Optional: set a max-width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+}
+
+
+.cart-page {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.cart-page h1 {
+    color: WHITE;
+    text-transform: uppercase;
+    font-size: 28px;
+    /* border-bottom: 2px solid RED; */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    display: block;
+    border-top: 6px solid rgb(200, 0, 0);
+    /* background-color: red; */
+}
+.plate-area{
+    width: 40%;
+}
+/* .cart-table thead{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.cart-table tbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.cart-table th, .cart-table td {
+    border: 1px solid #44454A;
+    padding: 15px;
+    border-right: 1PX solid rgb(200, 0, 0);
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.cart-table th {
+    background-color: #1E1F22;
+}
+table tbody tr td p{
+    margin: 1rem 0;
+}
+.cart-table td img {
+    max-width: 120px;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.cart-table td span {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cart-table .btn-edit, .cart-table .btn-delete {
+    background-color: #44454A;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+.cart-table .btn-delete {
+    color: #000000;
+}
+
+.cart-table .btn-edit:hover {
+    /* background-color: #A7171E; */
+}
+
+.cart-table .btn-delete:hover {
+    /* background-color: RED; */
+}
+
+.fixtures-fittings {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.fixtures-fittings h2 {
+    color: rgb(200, 0, 0);
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.fitting-item {
+    border-right: 2px solid rgb(200, 0, 0);
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    background-color: #1E1F22;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.fitting-item img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.fitting-item p {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.fitting-item button {
+    background-color: rgb(200, 0, 0);
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.summary {
+    background-color: #1E1F22;
+    padding: 20px;
+    text-align: right;
+}
+
+.summary input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: #44454A;
+    color: #FFFFFF;
+}
+
+.summary button {
+    background-color: rgb(200, 0, 0);
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.summary p {
+    margin: 10px 0;
+    color: #888888;
+}
+
+.summary label {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.summary h3 {
+    color: rgb(200, 0, 0);
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+    .fitting-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .nav-links li {
+        margin-bottom: 10px;
+    }
+    .fitting-item {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .summary {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+    .fitting-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart-table td img {
+        max-width: 80px;
+    }
+    .fitting-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* For Firefox */
+    width: 100%;
+    /* background-color: black;   */
+}
+  
+  .product-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1E1F22;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 10px;
+    min-width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 130px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .product-title {
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+    color: white;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 0px;
+  }
+  
+  .product-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    width: 7rem;
+    color: #fff;
+    background-color: rgb(200, 0, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-btn:hover {
+    background-color: rgb(200, 0, 0);
+  }
+  
+  .prev-btn, .next-btn {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  

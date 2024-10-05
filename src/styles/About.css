@@ -1,0 +1,611 @@
+/* General Styles */
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+
+
+.about-us {
+    padding: 50px 20px;
+    background-color: #000000;
+    color: white;
+    text-align: left;
+}
+
+.about-us h1 {
+    color: rgb(200, 0, 0);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.about-us .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-us .text-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.text-section p {
+    margin-bottom: 2rem;
+    line-height: 1.4rem;
+}
+
+.about-us .text-section button {
+    background-color: rgb(200, 0, 0);
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.about-us .highlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-us .highlights .highlight {
+    background-color: #212121;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.about-us .highlights .highlight div {
+    /* background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; */
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.about-us .highlights .highlight img{
+    margin-right: 1rem;
+}
+
+
+/* Base Styles */
+.customer-care,
+.delivery-info {
+    padding: 50px 20px;
+    background-color: #000000;
+    text-align: left;
+    color: white;
+}
+
+.customer-care h2,
+.delivery-info h2 {
+    color: rgb(200, 0, 0);
+    font-size: 3rem; /* Adjusted for better scaling */
+    margin-bottom: 1rem;
+}
+
+.customer-care {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.customer-care > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    /* padding: 20px; */
+    /* flex-wrap: wrap;  */
+}
+
+.customer-care > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.customer-care > div > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.customer-care img {
+    width: 100%;
+    max-width: 50%; /* Set a max-width for large screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2rem;
+    /* margin-bottom: 2rem; */
+    /* border-radius: 8px; */
+}
+
+.customer-care p {
+    margin-bottom: 2rem;
+    line-height: 1.4rem;
+}
+
+.customer-care button {
+    background-color: rgb(200, 0, 0);
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+
+/* Large Screens (Desktops and Laptops) */
+@media (min-width: 1024px) {
+    .customer-care {
+        padding: 50px 100px;
+    }
+
+    .customer-care img {
+        max-width: 40%; /* Reduce image size slightly */
+    }
+
+    .customer-care h2 {
+        font-size: 3.5rem; /* Increase font size for larger screens */
+    }
+
+    .customer-care p {
+        line-height: 1.6rem; /* Increase line height for readability */
+    }
+}
+
+/* Tablets and Smaller Desktops */
+@media (max-width: 1023px) {
+    .customer-care {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .customer-care > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .customer-care img {
+        max-width: 70%;
+        margin-bottom: 1.5rem;
+    }
+
+    .customer-care h2 {
+        font-size: 3rem;
+    }
+
+    .customer-care p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .customer-care {
+        padding: 20px 10px;
+    }
+
+    .customer-care > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+    }
+
+    .customer-care img {
+        max-width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .customer-care h2 {
+        font-size: 2.5rem;
+    }
+
+    .customer-care p {
+        margin-bottom: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .customer-care button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* Responsive Styles */
+
+@media (min-width: 768px) {
+    
+
+    .about-us .about-content {
+        flex-wrap: nowrap;
+    }
+
+    .about-us .text-section {
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    .about-us .highlights {
+        width: 35%;
+    }
+
+    .highlights .highlight {
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+    
+
+    .about-us {
+        padding: 80px 40px;
+    }
+
+    .customer-care,
+    .delivery-info {
+        padding: 80px 40px;
+    }
+
+    
+}
+
+/* Base Styles */
+.delivery-info {
+    padding: 50px 20px;
+    background-color: #000000;
+    text-align: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
+}
+
+.delivery-info h2 {
+    color: rgb(200, 0, 0);
+    font-size: 3rem; /* Adjusted for better scaling */
+    margin-bottom: 1rem;
+}
+
+.delivery-info div {
+    flex: 1 1 60%; /* Flexbox to control the width */
+    max-width: 60%;
+}
+
+.delivery-info img {
+    flex: 1 1 35%;
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px; /* Space between text and image */
+}
+
+.delivery-info div p {
+    margin-bottom: 2rem;
+    line-height: 1.4rem;
+}
+
+.delivery-info div ul{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.delivery-info div ul li{
+    margin-bottom: 0.5rem;
+}
+/* Media Queries */
+
+/* Large Screens (Desktops and Laptops) */
+@media (min-width: 1024px) {
+    .delivery-info h2 {
+        font-size: 3.5rem; /* Slightly larger on large screens */
+    }
+
+    .delivery-info div {
+        max-width: 60%;
+    }
+
+    .delivery-info img {
+        max-width: 35%;
+        margin-left: 20px;
+    }
+}
+
+/* Tablets and Smaller Desktops */
+@media (max-width: 1023px) {
+    .delivery-info {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        text-align: center; /* Center text for better readability */
+    }
+
+    .delivery-info div,
+    .delivery-info img {
+        max-width: 100%;
+    }
+
+    .delivery-info img {
+        margin: 20px 0; /* Add margin above and below the image */
+    }
+
+    .delivery-info h2 {
+        font-size: 3rem; /* Slightly smaller for tablets */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .delivery-info {
+        flex-direction: column-reverse;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .delivery-info div,
+    .delivery-info img {
+        max-width: 100%;
+    }
+
+    .delivery-info img {
+        margin: 20px 0; /* Add margin above and below the image */
+    }
+
+    .delivery-info h2 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .delivery-info div p {
+        margin-bottom: 1.5rem;
+        line-height: 1.3rem;
+    }
+}
+
+
+.contact-container {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: green; */
+    /* align-items: flex-start; */
+    padding: 20px;
+}
+.contact-container h2{
+    font-size: 2.3rem;
+}
+.form-class{
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.contact-details, .contact-form {
+    background-color: #333;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 50%;
+}
+
+.contact-details h2, .contact-form h2 {
+    color: rgb(200, 0, 0);
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+/* Responsive Design */
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    .contact-container {
+        padding: 30px;
+    }
+
+    .contact-details, .contact-form {
+        flex-basis: 100%; /* Full width */
+        max-width: 90%;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .contact-container {
+        padding: 20px 0;
+        flex-direction: column; /* Stack the elements */
+        align-items: stretch;
+    }
+
+    .contact-details, .contact-form {
+        margin: 10px 0;
+        width: 90%; /* Full width */
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px;
+        height: 2rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Devices (small phones) */
+@media (max-width: 480px) {
+    .contact-form input, .contact-form textarea {
+        font-size: 12px;
+    }
+
+    .contact-form button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+}
+
+
+
+.top-bar {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.btn-build {
+    background-color: rgb(200, 0, 0);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(200, 0, 0);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(200, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.news-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.news-section p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    
+}
